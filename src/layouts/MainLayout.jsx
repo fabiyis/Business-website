@@ -1,7 +1,15 @@
-function MainLayout() {
+import React from "react";
+import NavBar from "../components/NavBar";
+import FooterComp from "../components/FooterComp";
+
+function MainLayout({children}) {
   return (
-    <div>MainLayout</div>
-  )
+   <>
+    <NavBar />
+    <main>{children}</main>
+    <FooterComp />
+   </>
+  );
 }
 
-export default MainLayout
+export default MainLayout;
